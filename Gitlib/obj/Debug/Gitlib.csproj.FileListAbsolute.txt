@@ -1,0 +1,7 @@
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\obj\Debug\Gitlib.csprojResolveAssemblyReference.cache
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\bin\Debug\Gitlib.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\bin\Debug\Gitlib.pdb
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\obj\Debug\Gitlib.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib\obj\Debug\Gitlib.pdb

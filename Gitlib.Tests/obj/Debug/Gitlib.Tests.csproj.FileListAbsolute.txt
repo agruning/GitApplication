@@ -1,0 +1,11 @@
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Gitlib.Tests.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Gitlib.Tests.pdb
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Gitlib.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Gitlib.pdb
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\obj\Debug\Gitlib.Tests.csprojResolveAssemblyReference.cache
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\obj\Debug\Gitlib.Tests.dll
+C:\Users\t-algrun\Documents\Visual Studio 2015\Projects\ConsoleApplication1\Gitlib.Tests\obj\Debug\Gitlib.Tests.pdb
