@@ -10,7 +10,7 @@ namespace GitUI
 {
     public class App : Application
     {
-        Xamarin.Forms.Label labl;
+        Xamarin.Forms.Label labl, issueTitle, issueUrl, issueBody;
         StackLayout layout;
         public App()
         {
@@ -19,6 +19,7 @@ namespace GitUI
                 HorizontalTextAlignment = TextAlignment.Center,
                 Text = "Welcome to Xamarin Forms!"
             };
+
             layout = new StackLayout
             {
                 VerticalOptions = LayoutOptions.Center,
@@ -28,12 +29,12 @@ namespace GitUI
                         labl
                     }
             };
+
             MainPage = new ContentPage
             {
                 Content = layout
             };
         }
-
 
         protected async override void OnStart()
         {
@@ -46,8 +47,6 @@ namespace GitUI
             labl.Text = "Issues:";
             labl.FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Xamarin.Forms.Label));
 
-
-            // List View
             ListView listView = new ListView
             {
                 ItemsSource = issuesData,
@@ -57,38 +56,44 @@ namespace GitUI
                     var textCell = new TextCell();
                     textCell.SetBinding(TextCell.TextProperty, "title");
                     return textCell;
-
-                    //Xamarin.Forms.Label urlLabel = new Xamarin.Forms.Label();
-                    //urlLabel.SetBinding(Xamarin.Forms.Label.TextProperty, "Title");
-
-                    //return new ViewCell
-                    //{
-                    //    View = new StackLayout
-                    //    {
-                    //        Padding = new Thickness(0, 5),
-                    //        Orientation = StackOrientation.Horizontal,
-                    //        Children =
-                    //        {
-                    //            new StackLayout
-                    //            {
-                    //                VerticalOptions = LayoutOptions.Center,
-                    //                Spacing = 0,
-                    //                Children =
-                    //                {
-                    //                    urlLabel
-                    //                }
-                    //            }
-                    //        }
-
-                    //    }
-                    //};
-
                 }
-
                 )
             };
 
-            //listView.ItemTapped += () => { };
+            listView.ItemTapped += (sender, e) => 
+            {
+                var issue = (Issue)e.Item;
+
+                ContentPage IssuePage = new ContentPage();
+                {
+                    layout.Children.Clear();
+
+                    issueTitle = new Xamarin.Forms.Label
+                    {
+                        FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Xamarin.Forms.Label)),
+                        Text = issue.title
+
+                    };
+
+                    issueUrl = new Xamarin.Forms.Label
+                    {
+                        FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Xamarin.Forms.Label)),
+                        Text = issue.url
+
+                    };
+
+                    issueBody = new Xamarin.Forms.Label
+                    {
+                        FontSize = Device.GetNamedSize(NamedSize.Small, typeof(Xamarin.Forms.Label)),
+                        Text = issue.body
+
+                    };
+
+                    layout.Children.Add(issueTitle);
+                    layout.Children.Add(issueUrl);
+                    layout.Children.Add(issueBody);
+                };
+            };
 
             layout.VerticalOptions = LayoutOptions.FillAndExpand;
             layout.HorizontalOptions = LayoutOptions.FillAndExpand;
@@ -107,3 +112,28 @@ namespace GitUI
         }
     }
 }
+
+//Xamarin.Forms.Label urlLabel = new Xamarin.Forms.Label();
+//urlLabel.SetBinding(Xamarin.Forms.Label.TextProperty, "Title");
+
+//return new ViewCell
+//{
+//    View = new StackLayout
+//    {
+//        Padding = new Thickness(0, 5),
+//        Orientation = StackOrientation.Horizontal,
+//        Children =
+//        {
+//            new StackLayout
+//            {
+//                VerticalOptions = LayoutOptions.Center,
+//                Spacing = 0,
+//                Children =
+//                {
+//                    urlLabel
+//                }
+//            }
+//        }
+
+//    }
+//};
